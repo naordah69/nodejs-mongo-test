@@ -4,7 +4,8 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
-db = mongoose.createConnection("mongodb://tester2:123456@157.245.75.184/persons?authSource=admin")
+
+db = mongoose.createConnection("mongodb://UserName:Password@IpAddress/persons?authSource=admin")
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
