@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "Salez Client Api",
+      "name": "Node / Express / Mongo Test",
       "script": "bin/www",
       "append_env_to_name": true,
       "exec_mode": "cluster",
