@@ -5,7 +5,10 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
-db = mongoose.createConnection("mongodb://mongo-t:fasdewr@localhost/persons?authSource=admin")
+/**
+ * Change this to the real connection string!
+ */
+db = mongoose.createConnection("mongodb://")
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
