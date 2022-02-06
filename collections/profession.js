@@ -9,3 +9,4 @@ const ProfessionSchema = {
 const ProfessionModel = db.model('profession', ProfessionSchema);
 
 module.exports.Profession = ProfessionModel;
+
