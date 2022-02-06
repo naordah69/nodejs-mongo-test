@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 const {Person} = require('../collections/person');
-const {Profession} = require("../collections/profession");
+const {Profession} = require("../collections/profession"); 
 router.get('/populate-mongo', async (req, res, next) => {
     let {data: persons} = await axios.get("https://raw.githubusercontent.com/dominictarr/random-name/master/names.json");
     let {data: professions} = await axios.get('https://raw.githubusercontent.com/dariusk/corpora/master/data/humans/occupations.json');
@@ -41,7 +41,7 @@ router.get('/populate-mongo', async (req, res, next) => {
 
     }
 
-    return res.json({code: 200}) 
+    return res.json({code: 200})
 
 });
 router.get('/', async (req, res) => {
