@@ -6,6 +6,7 @@ const logger = require('morgan');
 const mongoose = require('mongoose');
 
 /**
+ * TODO:
  * Change this to the real connection string!
  */
 db = mongoose.createConnection("mongodb://")
