@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
+const {Profession} = require("../collections/profession");
 const {Person} = require('../collections/person');
-const {Profession} = require("../collections/profession"); 
+
 router.get('/populate-mongo', async (req, res, next) => {
     let {data: persons} = await axios.get("https://raw.githubusercontent.com/dominictarr/random-name/master/names.json");
     let {data: professions} = await axios.get('https://raw.githubusercontent.com/dariusk/corpora/master/data/humans/occupations.json');
@@ -55,8 +56,15 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }
 
+router.get('/t',async (req,res)=>{
+    let person = await Person.findOne().populate('profession');
+    console.log("here");
+    let profession = await Profession.findOne();
+    return res.json({code: 200, data: {person, profession}})
+})
 router.get('/', async (req, res) => {
-    let person = await Person.findOne();
+    let person = await Person.findOne().populate('profession');
+    console.log("here");
     let profession = await Profession.findOne();
     return res.json({code: 200, data: {person, profession}})
 })

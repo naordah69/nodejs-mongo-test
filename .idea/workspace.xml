@@ -4,6 +4,9 @@
     <list default="true" id="ae7032bf-4145-45e0-abe2-20575eccc5da" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/collections/person.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/profession.js" beforeDir="false" afterPath="$PROJECT_DIR$/collections/profession.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,8 @@
       <workItem from="1639998353188" duration="164000" />
       <workItem from="1640001240218" duration="50000" />
       <workItem from="1640119856274" duration="5033000" />
-      <workItem from="1644140128418" duration="1414000" />
+      <workItem from="1644140128418" duration="1588000" />
+      <workItem from="1644218556178" duration="332000" />
     </task>
     <servers />
   </component>

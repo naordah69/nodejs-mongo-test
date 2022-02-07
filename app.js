@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
  * TODO:
  * Change this to the real connection string!
  */
-db = mongoose.createConnection("mongodb://")
+db = mongoose.createConnection("mongodb://mongo-t:fasdewr@157.245.75.184/persons?authSource=admin")
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
